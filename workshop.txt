@@ -1,0 +1,97 @@
+version=1
+id=3559783131
+title=Woodcutting Skill - Overhaul (B42)
+description=[h1]Woodcutting Skill — Overhaul (B42)[/h1]
+description=
+description=An overhaul of the Woodcutting skill, updated for [b]Build 42[/b].
+description=Fully configurable: [i]damage per level (optional one-hit threshold), max damage cap, extra-loot rework, XP multiplier[/i] and a complete Sandbox page (SP/MP/Admin).
+description=[b]B42-safe Timed Actions[/b] (server-authoritative) without overriding vanilla files.
+description=
+description=[hr][/hr]
+description=
+description=[h1]What’s new in the B42 version[/h1]
+description=[list]
+description=[*][b]Safe Timed-Action patch[/b] for Chop Tree / Remove Bush (no vanilla overrides; compatible with B42 changes).
+description=[*][b]Server-authoritative[/b] logic for consistent multiplayer results.
+description=[*][b]Updated translations[/b] using B42’s table format (IG_UI / UI / Sandbox). Languages: [b]EN[/b], [b]PT-BR[/b].
+description=[*][b]Dedicated Sandbox page[/b] with clear tooltips for every option.
+description=[/list]
+description=
+description=[hr][/hr]
+description=
+description=[h1]Highlights[/h1]
+description=[list]
+description=[*][b]Per-level tree damage[/b], with an optional [b]one-hit threshold[/b].
+description=[*][b]Endurance savings[/b] per level and [b]faster bush removal[/b].
+description=[*][b]+2 TreeDamage per level with axes[/b] (keeps the spirit of the original).
+description=[*][b]Extra loot rework[/b] on medium/large trees (logs, branches, twigs, pinecones; rare fruit/“finds” gated by skill & season).
+description=[*][b]XP multiplier[/b] for tree hits.
+description=[*][b]Woodcutter trait[/b] (+1 Woodcutting) and boosts for related professions.
+description=[/list]
+description=
+description=[hr][/hr]
+description=
+description=[h1]Config (SP / Host / Dedicated)[/h1]
+description=[b]Singleplayer / Host:[/b] when creating a world, open the [b]Woodcutting[/b] tab in Sandbox Options and adjust.
+description=
+description=[b]Dedicated server:[/b] edit the save’s Sandbox (or create a preset) and set:
+description=[code]
+description=SandboxVars.Woodcutting = {
+description=  damageBaseMultiplier = 1.0,
+description=  damagePerLevel       = 0.15,
+description=  damageMaxMultiplier  = 8.0,
+description=  oneHitLevelThreshold = 6,
+description=  oneHitTreeDamage     = 2000,
+description=  onlyForAxes          = true,
+description=  xpMultiplier         = 1.0,
+description=
+description=  cumulatedForagingAndWoodcuttingSkillLevelForFruit = 8,
+description=  FruitTreeExtra = 80,
+description=  Winter         = 130,
+description=  Pinecone       = 20,
+description=  PineTreeExtra  = 120,
+description=  Log            = 40,
+description=  TreeBranch     = 35,
+description=  Twigs          = 30,
+description=}
+description=[/code]
+description=[i]Tip:[/i] with the defaults, around level [b]6–7[/b] you can one-hit trees if the threshold is enabled.
+description=
+description=[hr][/hr]
+description=
+description=[h1]Server IDs[/h1]
+description=[code]
+description=Workshop ID: 3559783131
+description=Mod ID: WoodcuttingSkill_B42
+description=[/code]
+description=
+description=[hr][/hr]
+description=
+description=[h1]Compatibility[/h1]
+description=[list]
+description=[*]Made for [b]Build 42[/b]. For Build 41, use the separate B41 version (link below).
+description=[*]High compatibility via patching (no direct overrides).
+description=Only conflicts with mods that [i]replace[/i] B42’s [i]ISChopTreeAction[/i] or [i]ISRemoveBush[/i].
+description=[*]Extra-loot chances respect the Sandbox’s [b]Nature Abundance[/b].
+description=[/list]
+description=
+description=[hr][/hr]
+description=
+description=[h1]Languages[/h1]
+description=[b]English[/b], [b]Portuguese (Brazil)[/b].
+description=If you see raw keys like [i]IGUI_perks_Woodcutting[/i], switch the game language to EN/PT-BR and restart (or update the mod).
+description=
+description=[hr][/hr]
+description=
+description=[h1]Credits & Links[/h1]
+description=[list]
+description=[*][b]Original by Champy[/b] — Woodcutting Skill: [url]https://steamcommunity.com/sharedfiles/filedetails/?id=2944004910[/url]
+description=[*][b]Overhaul & B42 update[/b]: WindLother
+description=[*]Build 41 version (Overhaul): [url]https://steamcommunity.com/sharedfiles/filedetails/?id=3559242180[/url]
+description=[/list]
+description=
+description=[hr][/hr]
+description=
+description=[b]Happy chopping[/b]
+tags=Build 42;Farming;Skills;Traits
+visibility=public

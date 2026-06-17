@@ -1,0 +1,9 @@
+* text=auto
+
+*.lua text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.info text eol=lf
+
+*.png binary
+
